@@ -1,0 +1,51 @@
+
+
+   //private long delayLocationTime = 10;
+ /*private Handler timerHandler = new Handler();
+    private boolean shouldRun = true;
+    private Runnable timerRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (shouldRun) {
+                //run again after 1000 milliseconds (1 sec)
+                showLastLocation();
+                timerHandler.postDelayed(this, delayLocationTime * 1000);
+
+
+            }
+        }
+    };*/
+
+    /*@SuppressLint("MissingPermission")
+    public void showLastLocation(){
+        fusedLocationProviderClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                if(location != null){
+                    LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
+                    prevLocationDriver.add(latLng);
+                    prevLocationDriver.add(new LatLng(location.getLatitude(), location.getLongitude()));
+                    if(mainRoad == null){
+                        mainRoad = mMap.addPolyline(new PolylineOptions().addAll(prevLocationDriver));
+
+                    } else {
+                        mainRoad.remove();
+                        mainRoad = mMap.addPolyline(new PolylineOptions().addAll(prevLocationDriver));
+                    }
+                }
+            }
+        });
+    }*/
+
+   /* @Override
+    public void onResume() {
+        super.onResume();
+        timerHandler.postDelayed(timerRunnable, 0);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        shouldRun = false;
+        timerHandler.removeCallbacksAndMessages(timerRunnable);
+    }*/
